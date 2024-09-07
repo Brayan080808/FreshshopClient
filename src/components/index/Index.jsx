@@ -13,8 +13,6 @@ const Index = () => {
         queryKey: ['productsIndex'], 
         queryFn: () => token.get('/api/index/'),
         
-
-  
         refetchOnWindowFocus: false
     })
 

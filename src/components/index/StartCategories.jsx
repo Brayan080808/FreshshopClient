@@ -10,9 +10,6 @@ const imgs = [CategoriesImg01,CategoriesImg02,CategoriesImg03]
 
 export const StartCategories = ({data}) =>{
 
-
-
-
     return(
         
         <div className={` flex flex-wrap gap-5 justify-center my-20 text-white `}>
@@ -49,11 +46,11 @@ const StartCategoriesElement = ({item,indice}) => {
     
     return(
     
-        <div className={`${ addToCart.isPending && "opacity-60 pointer-events-none" } flex flex-col  items-center w-full sm:w-auto transition-all sm:shadow-2xl rounded-md `}>
+        <div className={`${ addToCart.isPending && "opacity-60 pointer-events-none" } flex flex-col mx-12 sm:mx-0  items-center w-full sm:w-auto transition-all sm:shadow-2xl rounded-md `}>
             <NavLink to={`/productDetails/${item.id_producto}/`} className='overflow-hidden'>
-                <img src={imgs[indice]} alt="" className=' object-fill w-[75%] sm:w-[12rem] ml:w-[19rem] ml:h-[16rem] hover:scale-110 rounded-t-md '/>
+                <img src={imgs[indice]} alt="" className=' object-fill w-full sm:w-[12rem] ml:w-[19rem] ml:h-[16rem] hover:scale-110 rounded-t-md '/>
             </NavLink>
-            <button onClick={()=> handleAddToCart(item.id_producto)} className='bg-yellow hover:bg-black py-2 w-[75%] sm:w-[12rem]  ml:w-[19rem] rounded-b-md' >
+            <button onClick={()=> handleAddToCart(item.id_producto)} className='bg-yellow hover:bg-black py-2 w-full sm:w-[12rem]  ml:w-[19rem] rounded-b-md' >
                 <span>Sell</span>
             </button>
         </div>

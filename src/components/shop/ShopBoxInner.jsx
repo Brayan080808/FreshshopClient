@@ -8,7 +8,7 @@ export const ShopBoxInner = () =>{
 
 
     return(
-      <div className='p-10 grid grid-cols-1 md:grid-cols-4 gap-3 '>
+      <div className='p-3 sm:p-10 grid grid-cols-1 md:grid-cols-4 gap-3 '>
  
           {/* barra de busqueda y filtros */}
           <div className='md:col-start-4'>

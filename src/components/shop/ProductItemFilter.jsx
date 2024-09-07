@@ -30,13 +30,13 @@ export const ProductItemFilter = ({setProductInformation,productInformation}) =>
 
       <ul className='flex'>
         <li className=''>
-            <button className={' w-12 h-12 '+toggle(productInformation)} onClick={()=> setProductInformation(false)}>
+            <button className={` w-12 h-12 ${toggle(productInformation)}`} onClick={()=> setProductInformation(false)}>
             <FaTh  className='text-2xl m-auto'/>
             </button>
         </li>
 
         <li className=''>
-            <button className={' w-12 h-12  '+toggle(!productInformation)} onClick={()=> setProductInformation(true)}>
+            <button className={` w-12 h-12 ${toggle(!productInformation)}`} onClick={()=> setProductInformation(true)}>
               <FaListUl  className='text-2xl m-auto'/>
             </button>
         </li>           

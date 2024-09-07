@@ -51,8 +51,8 @@ export const SelectElement = ({filtro,setFiltro,options,setUrl}) =>{
             {options[filtro]}
           </button>
 
-          <div className={`absolute -left-28 w-[50vw] h-[50vh] text-sm text-textgrey z-[15] pointer-events-none overflow-hidden `} ref={dropdownRef}>
-            <div className={`relative z-[15] w-[13rem] left-28 flex flex-col
+          <div className={`absolute left-0 right-0 h-[50vh] text-sm text-textgrey z-[15] pointer-events-none overflow-hidden `} ref={dropdownRef}>
+            <div className={`relative z-[15] w-[13rem] left-0 flex flex-col
               ${toggleDropdown()}`}>
 
               {options.map((option,index) => (

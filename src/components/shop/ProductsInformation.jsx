@@ -69,13 +69,13 @@ export const ProductsInformation = ({product}) =>{
     
     return(
         
-        <div className={`flex gap-2 ${addToCart.isPending && "opacity-40 pointer-events-none"}`}>
-            <div className='overflow-hidden '>
+        <div className={` flex-col  sm:flex-row  flex sm:gap-2 ${addToCart.isPending && "opacity-40 pointer-events-none"}`}>
+            <div className=' overflow-hidden '>
             <div className='inline group relative '>
                 <span className='z-10 absolute top-0 right-0 p-2 bg-yellow  text-white'>
                     Sale
                 </span>
-              <img src={imagen} className=" object-cover w-[300px] h-[240px] md:h-[170px] lg:h-[200px] xl:h-[250px] " alt="Image"/>
+              <img src={imagen} className=" object-cover w-full h-[300px] sm:w-[300px] sm:h-[240px] md:h-[170px] lg:h-[200px] xl:h-[250px] " alt="Image"/>
               <div className='absolute bg-black bg-opacity-70  w-full h-full top-0 translate-y-[-101%] group-hover:translate-y-0 duration-500'>
                       
                 <button onClick={handleAddToCart} className='z-20 absolute bottom-0 p-3 text-white bg-yellow hover:bg-black'> Add to Cart</button>
@@ -98,7 +98,7 @@ export const ProductsInformation = ({product}) =>{
               
             </div>
 
-            <div className=' w-[65vw] space-y-3 bg-lightGrey p-4'>
+            <div className='w-full sm:w-[65vw] space-y-3 bg-lightGrey p-4 '>
                 <h3 className='mb-3 text-2xl font-bold'>{name_producto}</h3>
 
                 <span className='p-1 bg-yellow text-white text-xl font-bold'>{precio}$</span>
