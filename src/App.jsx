@@ -46,7 +46,7 @@ const Protected = ({children,isLoggedIn}) =>{
 }
 
 function App() {
-      const baseUrl = import.meta.env.VITE_API_SERVER_URL
+      const baseUrl = import.meta.env.VITE_CLIENT_URL
       const usuario = useSesion() 
       const token = ApiServerAuthenticated()
 
