@@ -15,7 +15,7 @@ const StartCart = () =>{
     if (isError){ return <ErrorState refetch={refetch} />}
     return (
             <div className="p-1 md:p-16 my-6 ">
-                <table className='w-full overflow-x-auto border border-red-600'>
+                <table className='w-full overflow-x-auto '>
                     <thead className=''>
                         <tr className="bg-yellow  text-white text-sm  sm:text-lg  ">
                             <th className='py-4 sm:px-1 md:px-2 '>Images</th>
