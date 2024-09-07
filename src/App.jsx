@@ -46,7 +46,7 @@ const Protected = ({children,isLoggedIn}) =>{
 }
 
 function App() {
-
+      const baseUrl = import.meta.env.VITE_API_SERVER_URL
       const usuario = useSesion() 
       const token = ApiServerAuthenticated()
 
@@ -73,7 +73,7 @@ function App() {
             <Toaster visibleToasts={3}/>
 
             <Routes>
-              <Route path='/' element={<Base  />}>
+              <Route path={baseUrl} element={<Base  />}>
                   <Route index element={<Index />}/>
                   <Route path='shop' element={<Shop />} />
                   <Route path='cart' element={ 
@@ -90,7 +90,7 @@ function App() {
                   <Route path='aboutUs' element={<AboutUs />} />
                   <Route path='contactUs' element={<ContactUs />} />
               </Route>
-              <Route path='next/version/' element={<NextVersion />} />
+              <Route path={`next/version/`} element={<NextVersion />} />
 
             </Routes>
   
