@@ -14,7 +14,7 @@ export const BoxAddProducts = ({data}) => {
             <div className='flex flex-wrap gap-6 justify-center'>
                 {data.map((item,key) =>{
                     return(
-                        <NavLink key={key} to={`http://localhost:5173/productDetails/${item.id_producto}/`}>
+                        <NavLink key={key} to={`/productDetails/${item.id_producto}/`}>
                             <img  src={imgs[key]} alt="" className=' hover:scale-105 transition-all'/>
                         </NavLink>
 

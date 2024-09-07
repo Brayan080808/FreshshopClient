@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 export const Products = ({ product }) => {
     const { id_producto, name_producto, precio, id_whishlist, imagen } = product;
 
-    const url = `http://localhost:5173/productDetails/${id_producto}/`;
+    const url = `/productDetails/${id_producto}/`;
     const usuario = useSesion();
     const addToCart = useMutationPostCart();
     const addToWhishlist = useMutationPostWhishlist();

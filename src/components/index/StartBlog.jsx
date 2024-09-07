@@ -96,10 +96,10 @@ const StartBlogCart = ({image, parraf, title, id_producto, id_whishlist}) =>{
                     <button onClick={handleWhishlist} className={` p-2 bg-black hover:bg-yellow transition-all `}>
                         <FaHeart className={`${colorWhishlist && "text-red-600 "}`}/>
                     </button>
-                    <NavLink to={`http://localhost:5173/productDetails/${id_producto}/`} className=' p-2 bg-black hover:bg-yellow transition-all'>
+                    <NavLink to={`/productDetails/${id_producto}/`} className=' p-2 bg-black hover:bg-yellow transition-all'>
                         <FaRegEye />
                     </NavLink>
-                    <NavLink to={`http://localhost:5173/productDetails/${id_producto}/`} className=' p-2 bg-black hover:bg-yellow transition-all'>
+                    <NavLink to={`/productDetails/${id_producto}/`} className=' p-2 bg-black hover:bg-yellow transition-all'>
                         <FaRegComments />
                     </NavLink>
                 </div>

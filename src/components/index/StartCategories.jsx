@@ -50,7 +50,7 @@ const StartCategoriesElement = ({item,indice}) => {
     return(
     
         <div className={`${ addToCart.isPending && "opacity-60 pointer-events-none" } flex flex-col  items-center w-full sm:w-auto transition-all sm:shadow-2xl rounded-md `}>
-            <NavLink to={`http://localhost:5173/productDetails/${item.id_producto}/`} className='overflow-hidden'>
+            <NavLink to={`/productDetails/${item.id_producto}/`} className='overflow-hidden'>
                 <img src={imgs[indice]} alt="" className=' object-fill w-[75%] sm:w-[12rem] ml:w-[19rem] ml:h-[16rem] hover:scale-110 rounded-t-md '/>
             </NavLink>
             <button onClick={()=> handleAddToCart(item.id_producto)} className='bg-yellow hover:bg-black py-2 w-[75%] sm:w-[12rem]  ml:w-[19rem] rounded-b-md' >
