@@ -14,16 +14,16 @@ const StartCart = () =>{
     if (isPending) return <Spiner />
     if (isError){ return <ErrorState refetch={refetch} />}
     return (
-            <div className="p-2 md:p-16 my-6">
-                <table className='w-full'>
+            <div className="p-1 md:p-16 my-6 ">
+                <table className='w-full overflow-x-auto border border-red-600'>
                     <thead className=''>
-                        <tr className="bg-yellow  text-white  text-lg ">
-                            <th className='py-4 px-1 md:px-2'>Images</th>
-                            <th className='py-4 px-1 md:px-2'>Product Name</th>
-                            <th className='py-4 px-1 md:px-2'>Quantity</th>
-                            <th className='py-4 px-1 md:px-2'>Price</th>
-                            <th className='py-4 px-1 md:px-2'>Total</th>
-                            <th className='py-4 px-1 md:px-2'>Remove</th>
+                        <tr className="bg-yellow  text-white text-sm  sm:text-lg  ">
+                            <th className='py-4 sm:px-1 md:px-2 '>Images</th>
+                            <th className='py-4 sm:px-1 md:px-2 '>Name</th>
+                            <th className='py-4 sm:px-1 md:px-2 '>Quantity</th>
+                            <th className='py-4 sm:px-1 md:px-2 '>Price</th>
+                            <th className='py-4 sm:px-1 md:px-2 '>Total</th>
+                            <th className='py-4 sm:px-1 md:px-2 '>Remove</th>
                         </tr>
                     </thead>
                     <tbody className=''>

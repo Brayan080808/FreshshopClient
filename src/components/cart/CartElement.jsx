@@ -18,15 +18,15 @@ const CartElement = ({product}) => {
 
     return(
         
-        <tr className={`p-6  border-b-2 border-lightGrey ${mutationDelete.isPending && "opacity-40 pointer-events-none"}`} >
+        <tr className={`p-6 border-b-2 border-lightGrey ${mutationDelete.isPending && "opacity-40 pointer-events-none"}`} >
             <td className='text-center flex justify-center items-center'>
                 <div className='py-3 '>
-                    <img src={product.imagen} alt=""  className='w-24 h-24 object-cover '
+                    <img src={product.imagen} alt=""  className='w-[4.5rem] h-[4.5rem]  sm:w-24 sm:h-24 object-cover '
                     />   
                 </div>
             
             </td>
-            <td className=' font-bold text-center'>{product.name_producto}</td>
+            <td className='  text-sm sm:text-base font-bold text-center'>{product.name_producto}</td>
             <td> 
                 <input type='number' value={value} onChange={handleOnChange} onBlur={handleOnBlur} min={1} max={20} step={1} className=' border border-black text-center target:border-yellow focus:border-yellow w-full'/>
                 
