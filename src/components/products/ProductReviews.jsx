@@ -25,7 +25,7 @@ export const ProductReviews = () => {
 
 
     return(
-        <section className=' mx-auto mb-14 p-5 sm:p-14'>
+        <section className=' mx-auto mb-14 p-2 sm:p-14'>
           
     
     <hr className="my-8 border-t border-gray-300" />

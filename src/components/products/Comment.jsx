@@ -83,7 +83,7 @@ const Comment = ({ post, rating, title, fromUser, id_comentario, username, image
                 <span className='text-yellow'>Reviewed on {date}</span>
             </div>
 
-            { fromUser && <div className=" flex items-center absolute right-3 sm:right-7 h-full top-0 ">
+            { fromUser && <div className=" flex items-center absolute right-1 sm:right-7 h-full top-0 ">
                 <button onClick={handleDeleteComment} className=" text-3xl  text-yellow ">
                     <MdDelete/>
                 </button>

@@ -27,7 +27,7 @@ const StartAllTitleBox = ({page}) =>{
         <div className='  bg-fixed ' 
         style={{backgroundImage: `url(${AllBgTitle})`,
           }}>
-            <div className=' p-16 bg-black bg-opacity-60  '>
+            <div className='px-4 py-16 sm:px-16 bg-black bg-opacity-60  '>
 
                 <div className='flex justify-between items-center '>
                     <h2 className=' text-3xl font-bold text-white'>{page}</h2>
