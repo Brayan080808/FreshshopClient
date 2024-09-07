@@ -23,7 +23,7 @@ const ContactInfo = () => (
                 key={index}
             >
                 <div className="text-3xl px-2 text-yellow">{info.icon}</div>
-                <a className="text-lg font-medium ml-4 text-textgrey" href={info.href || "#!"}>
+                <a className="sm:text-lg text-wrap font-medium ml-4 text-textgrey" href={info.href || "#!"}>
                     {info.label}
                 </a>
             </div>

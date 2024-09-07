@@ -5,7 +5,7 @@ import { LuLink } from "react-icons/lu";
 export const StartFooter =()=>{
     return(
         <footer>
-            <div className="bg-black  grid  grid-cols-1 sm:grid-cols-3 p-16  text-white">
+            <div className="bg-black  grid  grid-cols-1 sm:grid-cols-3 p-4 sm:p-16  text-white">
                    
                     <FooterElementRow1 sesion={'Business Time'}>
                         

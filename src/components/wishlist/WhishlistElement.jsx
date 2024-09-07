@@ -29,10 +29,10 @@ const WhishlistElement = ({product}) => {
                 ${product.precio}
                 
             </td>
-            <td className='text-center text-textgrey text-xl'>{true ? 'In stock':'No found'}</td>
+            <td className='text-center text-textgrey text-base sm:text-xl'>{true ? 'In stock':'No found'}</td>
 
             <td className='text-center text-textgrey'>
-                <button onClick={handleSubmit} className='bg-yellow  font-bold text-white p-3 hover:bg-black transition-colors'>Add to Cart</button>
+                <button onClick={handleSubmit} className='bg-yellow  font-bold text-white  py-3 px-1 sm:p-3 hover:bg-black transition-colors'>Add to Cart</button>
             </td>
 
             <td className=' '>

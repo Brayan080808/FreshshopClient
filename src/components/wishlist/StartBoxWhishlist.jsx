@@ -13,13 +13,13 @@ export const StartBoxWhishlist = () =>{
     
 
     return (
-        <div className="p-2 py-6 md:p-16">
+        <div className="p-1 md:p-16 my-6">
             <table className='w-full'>
                 <thead className=''>
-                    <tr className="bg-yellow  text-white  text-lg ">
+                    <tr className="bg-yellow text-white text-sm  sm:text-lg ">
                         <th className='py-4 px-1 md:px-2'>Images</th>
-                        <th className='py-4 px-1 md:px-2'>Product Name</th>
-                        <th className='py-4 px-1 md:px-2'>Unit Price</th>
+                        <th className='py-4 px-1 md:px-2'>Name</th>
+                        <th className='py-4 px-1 md:px-2'>Price</th>
                         <th className='py-4 px-1 md:px-2'>Stock</th>
                         <th className='py-4 px-1 md:px-2'>Add Item</th>
                         <th className='py-4 px-1 md:px-2'>Remove</th>
