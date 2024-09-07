@@ -34,12 +34,12 @@ const Comment = ({ post, rating, title, fromUser, id_comentario, username, image
     const handleHelpful = () => {
         if(usuario.isLoggedIn){
             if (helpful){
-                token.delete(`http://127.0.0.1:8000/helpful/${idHelpful}/`).
+                token.delete(`/helpful/${idHelpful}/`).
                 then(() => setIdHelpful(null))
                 setHelpfulCount(helpfulCount-1)
             }
             else{
-                token.post("http://127.0.0.1:8000/helpful/",{"comentario":id_comentario}).then((response) => setIdHelpful(response.data.id_helpful))
+                token.post("/helpful/",{"comentario":id_comentario}).then((response) => setIdHelpful(response.data.id_helpful))
                 setHelpfulCount(helpfulCount+1)
             }
             setHelpful(!helpful)

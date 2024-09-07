@@ -3,7 +3,7 @@ import Spiner from '../Spiner.jsx'
 import { NavLink } from 'react-router-dom'
 
 const OrderBox = () => {
-    const {isPending, isError, data, error } = useFetchCart("http://127.0.0.1:8000/shop/carro_compra/")
+    const {isPending, isError, data, error } = useFetchCart("/shop/carro_compra/")
 
     if (isPending) return <Spiner/>
     if (isError) return <h3> Error: {error.message}</h3> 

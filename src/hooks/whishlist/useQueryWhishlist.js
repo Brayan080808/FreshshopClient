@@ -15,7 +15,7 @@ function useQueryWhishlist(){
 
     const {isPending, isError, data, error, isSuccess ,refetch} = useQuery({
         queryKey: ['whishlist'], 
-        queryFn: () => token.get("http://127.0.0.1:8000/whishlist/"),
+        queryFn: () => token.get("/whishlist/"),
         onError: async (error, variables ) => {
         
             if( error.response.status == 401){

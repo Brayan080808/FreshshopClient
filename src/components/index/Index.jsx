@@ -11,7 +11,7 @@ const Index = () => {
     const token = ApiServerAuthenticated()
     const { isPending, isError, error, data} = useQuery({
         queryKey: ['productsIndex'], 
-        queryFn: () => token.get('http://127.0.0.1:8000/api/index/'),
+        queryFn: () => token.get('/api/index/'),
         
 
   

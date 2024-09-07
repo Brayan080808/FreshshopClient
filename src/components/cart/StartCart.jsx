@@ -7,7 +7,7 @@ import getNewToken from '../../services/login/getNewToken'
 import ErrorState from '../ErrorState'
 
 const StartCart = () =>{
-    const { isPending, isError, data, error, refetch } = useFetchCart("http://127.0.0.1:8000/shop/carro_compra/")
+    const { isPending, isError, data, error, refetch } = useFetchCart("/shop/carro_compra/")
     const usuario = useSesion()
 
 

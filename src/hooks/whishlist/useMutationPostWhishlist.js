@@ -17,7 +17,7 @@ function useMutationPostWhishlist(){
   
 
     const addToWhishlist = useMutation({
-        mutationFn: (data) => token.post("http://127.0.0.1:8000/whishlist/",data),
+        mutationFn: (data) => token.post("/whishlist/",data),
         onMutate:  (data) =>
         {
             queryClient.cancelQueries(['whishlist'])

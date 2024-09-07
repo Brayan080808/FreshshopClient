@@ -10,7 +10,7 @@ import ErrorState from '../ErrorState.jsx'
 const ProducDetails = () => {
 
     const { id } = useParams();
-    const url = `http://127.0.0.1:8000/api/shop/${id}/`;
+    const url = `/api/shop/${id}/`;
     
     const {isPending, isError, error, data, product, refetch} = useFetchProducts(url)
 

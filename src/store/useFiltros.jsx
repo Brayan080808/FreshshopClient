@@ -7,7 +7,7 @@ export const useFiltros = create((set) => ({
       precio__lte: 30,
       advancedSearch: "",
       categoria_producto: null,
-      url: `http://127.0.0.1:8000/api/shop/?advancedSearch=&categoria_producto=&ordering=&precio__gte=0&precio__lte=30`,
+      url: `/api/shop/?advancedSearch=&categoria_producto=&ordering=&precio__gte=0&precio__lte=30`,
 
 
       setAdvancedSearch: (value) => set(() => ({ advancedSearch: value})),
@@ -19,7 +19,7 @@ export const useFiltros = create((set) => ({
 
       setUrl: () => set((state) => ({
             
-            url: `http://127.0.0.1:8000/api/shop/?advancedSearch=${state.advancedSearch}&categoria_producto=${state.categoria_producto === null ? "" : state.categoria_producto}&ordering=${state.ordering === null ? "": state.ordering === 1 ? "-precio" : "precio"}&precio__gte=${state.precio__gte}&precio__lte=${state.precio__lte}`
+            url: `/api/shop/?advancedSearch=${state.advancedSearch}&categoria_producto=${state.categoria_producto === null ? "" : state.categoria_producto}&ordering=${state.ordering === null ? "": state.ordering === 1 ? "-precio" : "precio"}&precio__gte=${state.precio__gte}&precio__lte=${state.precio__lte}`
       
       }))
 }))

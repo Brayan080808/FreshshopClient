@@ -18,7 +18,7 @@ const Logout = () =>{
           navigate(history.currentPage)
         }
         
-        await ApiServer.post('http://127.0.0.1:8000/api/token/blacklist/', {
+        await ApiServer.post('/api/token/blacklist/', {
           refresh: refresh_token,
         }, {
           headers: {

@@ -15,7 +15,7 @@ function useQueryComment(){
     
     const {isPending, isError, data, error, refetch, fetchNextPage, hasNextPage ,isFetchingNextPage ,isFetchNextPageError} = useInfiniteQuery({
         queryKey: ['comments',id], 
-        initialPageParam: `http://127.0.0.1:8000/comentarios/${id}/`,
+        initialPageParam: `/comentarios/${id}/`,
         queryFn: (pageParam) => token.get(pageParam.pageParam).then((response) => response.data),
         getNextPageParam: (lastPage) => lastPage.next,
         refetchOnWindowFocus: false,

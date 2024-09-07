@@ -12,7 +12,7 @@ function useMutationComments(){
     const usuario = useSesion()
 
     const deleteToComment = useMutation({
-        mutationFn: (id_comentario) => token.delete(`http://127.0.0.1:8000/comentarios/actions/${id_comentario}/`),
+        mutationFn: (id_comentario) => token.delete(`/comentarios/actions/${id_comentario}/`),
         onMutate: async () =>
         {
 

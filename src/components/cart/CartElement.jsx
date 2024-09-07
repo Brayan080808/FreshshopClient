@@ -5,7 +5,7 @@ import useMutationPatchCart from '../../hooks/cart/useMutationPatchCart.js'
 
 const CartElement = ({product}) => {
     const [value, setValue] = useState(product.cantidad_del_producto);
-    const url = `http://127.0.0.1:8000/shop/carro_compra/${product.id_carro_compra}/`
+    const url = `/shop/carro_compra/${product.id_carro_compra}/`
     
     const mutationDelete = useMutationDeleteCart()
     const mutationPatch = useMutationPatchCart()

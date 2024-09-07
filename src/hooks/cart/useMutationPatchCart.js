@@ -19,7 +19,7 @@ function useMutationPatchCart(){
     const patchToCart = useMutation({
         mutationFn: async ({id_carro_compra,value}) =>  
           { 
-            const response = await token.patch(`http://127.0.0.1:8000/shop/carro_compra/${id_carro_compra}/`,{"cantidad_del_producto":value})
+            const response = await token.patch(`/shop/carro_compra/${id_carro_compra}/`,{"cantidad_del_producto":value})
             
            
           },

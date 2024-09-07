@@ -56,7 +56,7 @@ function App() {
                         try{
                               const newToken = await getNewToken(usuario)
                               usuario.setAccess_token(newToken)
-                              const response = await token.get('http://127.0.0.1:8000/carrito/count/')
+                              const response = await token.get('/carrito/count/')
                               usuario.setCountCart(response.data.count)                              
                         }
                         catch(error){

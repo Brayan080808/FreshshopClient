@@ -17,7 +17,7 @@ function useMutationPostCart() {
 
     const addToCart = useMutation({
         mutationFn: async (data) => {
-            const response = await token.post("http://127.0.0.1:8000/shop/carro_compra/", data);
+            const response = await token.post("/shop/carro_compra/", data);
             return response;
         },
         onMutate: async () => {

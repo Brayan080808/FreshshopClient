@@ -17,7 +17,7 @@ function useMutationDeleteWhishlist(){
     
 
     const deleteToWhishlist = useMutation({
-        mutationFn: (id_whishlist) => token.delete(`http://127.0.0.1:8000/whishlist/${id_whishlist}/`),
+        mutationFn: (id_whishlist) => token.delete(`/whishlist/${id_whishlist}/`),
         onMutate: async () =>
         {        
             await queryClient.cancelQueries(['whishlist'])

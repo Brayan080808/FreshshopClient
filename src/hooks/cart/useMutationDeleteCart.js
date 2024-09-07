@@ -16,7 +16,7 @@ function useMutationDeleteCart(){
 
 
     const deleteToCart = useMutation({
-        mutationFn: (id_carro_compra) => token.delete(`http://127.0.0.1:8000/shop/carro_compra/${id_carro_compra}/`),
+        mutationFn: (id_carro_compra) => token.delete(`/shop/carro_compra/${id_carro_compra}/`),
         onMutate: async () =>
         {        
             await queryClient.cancelQueries(['cart'])

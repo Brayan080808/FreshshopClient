@@ -17,7 +17,7 @@ const useMutationPostComments = () => {
 
     const postComment = async (data) => {
         // await delay(2000);
-        await token.post("http://127.0.0.1:8000/comentarios/actions/", {...data,producto: id});
+        await token.post("/comentarios/actions/", {...data,producto: id});
     }
 
     const addToComment = useMutation({
