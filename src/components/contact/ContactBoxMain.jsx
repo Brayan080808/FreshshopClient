@@ -3,7 +3,7 @@ import ContactFormCard from "./ContactFormCard";
 
 const ContactBoxMain = () => {
     return (
-        <section className="bg-lightGrey py-14 text-zinc-900 flex justify-center px-[10%] lg:px-[5%] ">
+        <section className="bg-lightGrey py-14 text-zinc-900 flex justify-center sm:px-[10%] lg:px-[5%] ">
             <div className="container px-4">
                 <div className="grid grid-cols-12 py-6 lg:gap-8">
                     <div className="col-span-12 lg:col-span-5 mb-12 lg:mb-0">
