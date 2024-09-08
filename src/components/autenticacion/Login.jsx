@@ -141,8 +141,9 @@ const Login = () => {
                 </div>
 
 
-              
-                <GoogleLogin onSuccess={onLoginGoogle} />
+                <div className='flex justify-center'>
+                    <GoogleLogin onSuccess={onLoginGoogle}  />
+                </div>
 
                 <div className="mt-2">
                     <button onClick={() => setShowCreateAcount(true)} className="block text-yellow bg-lightGrey hover:bg-yellow hover:text-white font-bold py-2 rounded-md transition duration-200 w-full">
