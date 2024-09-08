@@ -103,11 +103,8 @@ const StartBlogCart = ({image, parraf, title, id_producto, id_whishlist}) =>{
                         <FaRegComments />
                     </NavLink>
                 </div>
-
             </div>
-            
         </div>
     </div>
-
     )
 }

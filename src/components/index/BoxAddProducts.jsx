@@ -1,12 +1,9 @@
-
 import AddImg01 from '../../img/add-img-01.jpg'
 import AddImg02 from '../../img/add-img-02.jpg'
 import { NavLink } from 'react-router-dom'
 const imgs = [AddImg01,AddImg02]
 
 export const BoxAddProducts = ({data}) => {
-
-
 
     return(
         
